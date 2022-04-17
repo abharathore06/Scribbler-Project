@@ -1,6 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 body{
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat; 
     background-size: 100% 100%; 
     background-attachment: fixed;
+}
+
+/* Header part styling */
+.headContainer{
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    font-size: 130%;
+    line-height: 70%;
+}
+.logo h1{
+    color: blue; 
+}
+.buttons{
+    float: right;
+}
+.signin, .signup{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+/* Center Segment */
+.all, .create{
+    background-color: rgb(240, 195, 79);
+    font-weight: bold;
+    border-style: outset;
+    padding: 10px 20px;
+    display: flex;
+    margin: 10px;
+    margin-top: 10%;
+    
 }
