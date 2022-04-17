@@ -3,8 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="./scripts/header.js">
-    </script>
+    
     <link rel="stylesheet" href="./styles/header.css">
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
@@ -18,21 +17,93 @@
                 <p>Explore. Imagine. Create</p>
             </div>
             <div class="buttons">
-                <button class="signin" id="signin">Sign In</button>
-                <button class="signup" id="signup">Sign Up</button>
+                <button class="signbtn" id="si">Sign In</button>
+                <button class="signbtn" id="sup">Sign Up</button>
             </div>
         </header>
 
 
 
         <div class="postButtons">
-            <button class="all">All Posts</button>
-            <button class="create">Create Post</button>
+            <button class="all" onclick="window.location.href = './html/bloglist.html' ">All Posts</button>
+            <button id = "createMod" class="create">Create Post</button>
         </div>
 
 
+
     </div>
+    
+    
+    
+    <div id="signinModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalContent">
+            <form class="form1">
+                <span class="close">&times;</span>
+                <h3>Welcome Back!</h3>
+                <hr>
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+                <button class="signinbtn">Sign In</button>
+                <div class="footmod">Not a member? 
+                    <span class="highlight" id="redirect" > Sign Up</span>
+                </div>
+              </form>
+        </div>
+      </div>
+
+      <div id="signupModal" class="modal">
+          <div class="modalContent">
+              <form class="form2">
+                  <span class="close1">&times;</span>
+                  <h1>Get Started</h1>
+                  <hr>
+                  <label>Full Name</label>
+                  <input type="text" placeholder="Enter Full Name" required>
+                  <label>Username</label>
+                  <input type="text" placeholder="Enter Username" required>
+                  <label>Password</label>
+                  <input type="password" placeholder="Enter Password" required>
+                  <label>Confirm Password</label>
+                  <input type="password" placeholder="Confirm Password" required>
+                  <button class="signinbtn">Sign Up</button>
+              </form>
+          </div>
+      </div>
+
+
+      <div id="createModal" class="modal">
+          <div class="modalBody">
+              <form class="form3">
+                  <span class="close2">&times;</span>
+                  <h1>Pen Your Post</h1>
+                  <label>Title:</label>
+                  <input type="text">
+                  <label>Content:</label>
+                  <!-- <textarea rows="20%" cols="130%"></textarea> -->
+                  <input type="textbox" class="content" rows="20%" cols="130%">
+                  <button class="createbtn">Create</button>
+            
+                </form> 
+            </div>
+
+    </div> 
+
+
+
+
+
+
+      <script src="./scripts/header.js">
+    </script>
+    <script src="./scripts/index.js"></script>
     <!-- TODO: Include all your code for the header and home page here -->
 </body>
 
 </html>
+
+
+
